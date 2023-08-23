@@ -1,7 +1,6 @@
 
 .hero-mobile {
-    width: 383.867px;
-    height: 242.578px;
+    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -60,4 +59,66 @@
 .brands .maker {
     width: 58px;
     height: 17px;
+}
+
+@media(min-width: 768px) {
+    .hero-mobile {
+        width: 70%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    main .text {
+        padding: 20px;
+    }
+
+    .text .paragraph {
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+
+    .text button {
+        margin-bottom: 90px;
+    }
+
+    .text .title {
+        font-size: 50px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    .text .paragraph {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .text button {
+        font-size: 20px;
+        font-weight: 700;
+        padding: 20px 60px;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 35px;
+    }
+
+    .brands .databiz {
+        width: 100px;
+        height: 18px;
+    }
+    
+    .brands .audiophile {
+        width: 65px;
+        height: 33px;
+    }
+    
+    .brands .meet {
+        width: 80px;
+        height: 18px;
+    }
+    
+    .brands .maker {
+        width: 70px;
+        height: 25px;
+    }
 }
