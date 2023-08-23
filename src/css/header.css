@@ -1,6 +1,6 @@
 header{
     min-height: 75px;
-    padding: 1.3rem 1rem;
+    padding: 1.5rem 1rem;
     display: flex;
     align-items: center;
     position: relative;
@@ -40,8 +40,7 @@ header.open nav{
     transform: translateX(0%);
 }
 nav .nav-links{
-    margin-top: 75px;
-    flex: 1;
+    margin-top: 70px;
 }
 
 .nav-links .nav-link{
