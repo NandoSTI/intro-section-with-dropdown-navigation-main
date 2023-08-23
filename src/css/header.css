@@ -1,0 +1,124 @@
+header{
+    min-height: 75px;
+    padding: 1.3rem 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+header .menu{
+    position: fixed;
+    top: 1.3rem;
+    right: 1rem;
+    z-index: 2;
+    cursor: pointer;
+}
+.menu .close-menu{
+    display: none;
+}
+header.open .open-menu{
+    display: none;
+}
+header.open .close-menu{
+    display: initial;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 65vw;
+    height: 100vh;
+    background-color: var(--almost-white);
+    transform: translateX(100%);
+    transition: all .3s ease-in;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    z-index: 1;
+}
+header.open nav{
+    transform: translateX(0%);
+}
+nav .nav-links{
+    margin-top: 75px;
+    flex: 1;
+}
+
+.nav-links .nav-link{
+    position: relative;
+}
+.nav-link > a{
+    width: 100%;
+    padding: .5rem 1.5rem;
+    display: block;
+    transition: all .3s ease-in;
+}
+.nav-link > a:hover{
+    background: hsla(0, 0%, 88%, 0.5);
+}
+.nav-link .dropdown-list{
+    display: none;
+    padding: .5rem 1.5rem;
+    overflow-y: hidden;
+}
+.nav-link.link-open .dropdown-list{
+    display: block;
+}
+.dropdown-list .dropdown-link a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 1.5rem;
+}
+.dropdown-link a:hover {
+    background: hsla(0, 0%, 78%,.5);
+}
+.nav-link a span {
+    margin-right: .75rem;
+}
+.nav-link .arrow-up {
+    display: none;
+}
+.nav-link.link-open .arrow-up {
+    display: initial;
+}
+.nav-link.link-open .arrow-down {
+    display: none;
+}
+
+nav .btn-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    gap: 10px;
+}
+
+.btn-menu button{
+    width: 70%;
+    color: var(--medium-gray);
+    background: transparent;
+    font-size: .9rem;
+    font-weight: 700;
+    padding: .5rem 1rem;
+    margin: 0 .5rem;
+    border: .1rem solid var(--medium-gray);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+.btn-menu button:hover{
+    color: var(-almost-black);
+    border: .1rem solid var(-almost-black);
+    transform: translateY(-1px);
+}
+.btn-menu button:active{
+    transform: scale(1.2);
+}
+.btn-menu button:first-child{
+    border: none;
+}
+
+  
+  
