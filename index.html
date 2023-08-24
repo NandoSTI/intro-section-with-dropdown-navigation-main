@@ -91,19 +91,22 @@
       </nav>
     </header>
     <main>
-      <img src="src/images/image-hero-mobile.png" alt="hero mobile" class="hero-mobile">
+      <picture>
+        <source media="(min-width:765px)" srcset="src/images/image-hero-desktop.png" class="hero-desktop" >
+        <img src="src/images/image-hero-mobile.png" alt="hero image" class="hero-mobile">
+      </picture>
       <div class="text">
         <h1 class="title">Make remote work</h1>
         <p class="paragraph">
           Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
         </p>
         <button>Learn more</button>
-      </div>
-      <div class="brands">
-        <img src="src/images/client-databiz.svg" alt="databiz" class="databiz">
-        <img src="src/images/client-audiophile.svg" alt="audiophile" class="audiophile">
-        <img src="src/images/client-meet.svg" alt="meet" class="meet">
-        <img src="src/images/client-maker.svg" alt="maker" class="maker">
+        <div class="brands">
+          <img src="src/images/client-databiz.svg" alt="databiz" class="databiz">
+          <img src="src/images/client-audiophile.svg" alt="audiophile" class="audiophile">
+          <img src="src/images/client-meet.svg" alt="meet" class="meet">
+          <img src="src/images/client-maker.svg" alt="maker" class="maker">
+        </div>
       </div>
     </main>    
     <script src="src/js/index.js"></script>

@@ -1,21 +1,19 @@
-
 .hero-mobile {
     width: 100%;
-    margin-bottom: 10px;
 }
 
 .text {
-    padding: 5px;
+    padding: 10px;
 }
 
 .text .title {
-    font-size: 36px;
+    font-size: 30px;
     margin-bottom: 10px;
     font-weight: 700;
 }
 
 .text .paragraph {
-    font-size: 16px;
+    font-size: 14px;
     color: var(--medium-gray);
     font-weight: 500px;
     line-height: 26px;
@@ -27,7 +25,7 @@
     font-weight: 700;
     background-color: var(--almost-black);
     color: var(--almost-white);
-    padding: 20px 40px;
+    padding: 15px 40px;
     border-radius: 15px;
     border: none;
     cursor: pointer;
@@ -62,14 +60,22 @@
 }
 
 @media(min-width: 768px) {
-    .hero-mobile {
-        width: 70%;
-        margin-top: 30px;
-        margin-bottom: 30px;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
+    img {
+        max-width: 50%;
+        height: auto;
+    }
+    
+
     main .text {
-        padding: 20px;
+        padding: 25px;
     }
 
     .text .paragraph {
@@ -121,4 +127,45 @@
         width: 70px;
         height: 25px;
     }
+}
+
+@media (min-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        text-align: left;
+        padding: 0 80px;
+        gap: 100px;
+        margin: 0 auto;
+    }
+
+    img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    main .text {
+        padding: 0 80px;
+    }
+
+    .text .title {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .text .paragraph {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    main .brands {
+        display: flexbox;
+        justify-content: flex-start;
+    }
+
+    .text button {
+        margin-bottom: 120px;
+    }
+
 }

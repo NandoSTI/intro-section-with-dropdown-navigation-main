@@ -121,16 +121,15 @@ nav .btn-menu{
 
 @media (min-width: 768px) {
     header {
-        padding: 40px 30px;
+        padding: 30px 30px;
     }
     header .logo-link img {
         width: 120px;
     }
 
-    header .menu img {
-        width: 60px;
-    }
     header .menu{
+        width: 50px;
+        height: 50px;
         position: fixed;
         top: 1.8rem;
         right: 1.8rem;
@@ -139,7 +138,3 @@ nav .btn-menu{
     }
 }
 
-
-
-  
-  
