@@ -1,6 +1,6 @@
 body{
     min-height: 100vh;
-    color: var(--gray);
+    color: var(--medium-gray);
     font-size: 1rem;
     font-weight: 500;
     font-family: 'Epilogue', sans-serif;

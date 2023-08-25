@@ -3,67 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="src/images/favicon-32x32.png"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/variables.css">
-    <link rel="stylesheet" href="src/css/global.css">
-    <link rel="stylesheet" href="src/css/header.css">
-    <link rel="stylesheet" href="src/css/main.css">
-
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/variables.css" />
+    <link rel="stylesheet" href="src/css/global.css" />
+    <link rel="stylesheet" href="src/css/header.css" />
+    <link rel="stylesheet" href="src/css/main.css" />
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
     <div class="overlay"></div>
     <header>
-      <a href="#" class="logo-link">
-        <img src="src/images/logo.svg" alt="logo" class="logo">
-      </a>
+      <a href="#"><img src="src/images/logo.svg" alt="logo" class="logo" /></a>
       <div class="menu">
-        <img src="src/images/icon-menu.svg" alt="Open Menu" class="open-menu">
-        <img src="src/images/icon-close-menu.svg" alt="Close Menu" class="close-menu">
+        <img src="src/images/icon-menu.svg" alt="open" class="open-menu" />
+        <img
+          src="src/images/icon-close-menu.svg"
+          alt="close"
+          class="close-menu"
+        />
       </div>
       <nav>
         <ul class="nav-links">
           <li class="nav-link">
             <a href="#" class="dropdown">
               <span>Features</span>
-              <img src="src/images/icon-arrow-up.svg" alt="Arrow Up" class="arrow-up">
-              <img src="src/images/icon-arrow-down.svg" alt="Arrow Down" class="arrow-down">
+              <img
+                src="src/images/icon-arrow-up.svg"
+                alt="arrow up"
+                class="arrow-up"
+              />
+              <img
+                src="src/images/icon-arrow-down.svg"
+                alt="arrow down"
+                class="arrow-down"
+              />
             </a>
             <ul class="dropdown-list">
               <li class="dropdown-link">
                 <a href="#">
-                  <img src="src/images/icon-todo.svg" alt="Todo">
+                  <img src="src/images/icon-todo.svg" alt="todo" />
                   <span>Todo List</span>
                 </a>
               </li>
               <li class="dropdown-link">
                 <a href="#">
-                  <img src="src/images/icon-calendar.svg" alt="Calendar">
-                  <span>Calendar</span>
+                  <img src="src/images/icon-calendar.svg" alt="calender" />
+                  <span>Calender</span>
                 </a>
               </li>
               <li class="dropdown-link">
                 <a href="#">
-                  <img src="src/images/icon-reminders.svg" alt="Bell">
+                  <img src="src/images/icon-reminders.svg" alt="bell" />
                   <span>Reminders</span>
                 </a>
               </li>
               <li class="dropdown-link">
                 <a href="#">
-                  <img src="src/images/icon-planning.svg" alt="Clock">
+                  <img src="src/images/icon-planning.svg" alt="clock" />
                   <span>Planning</span>
                 </a>
               </li>
@@ -72,8 +80,16 @@
           <li class="nav-link">
             <a href="#" class="dropdown">
               <span>Company</span>
-              <img src="src/images/icon-arrow-up.svg" alt="Arrow Up" class="arrow-up">
-              <img src="src/images/icon-arrow-down.svg" alt="Arrow Down" class="arrow-down">
+              <img
+                src="src/images/icon-arrow-up.svg"
+                alt="arrow up"
+                class="arrow-up"
+              />
+              <img
+                src="src/images/icon-arrow-down.svg"
+                alt="arrow down"
+                class="arrow-down"
+              />
             </a>
             <ul class="dropdown-list">
               <li class="dropdown-link"><a href="#">History</a></li>
@@ -84,31 +100,35 @@
           <li class="nav-link"><a href="#">Careers</a></li>
           <li class="nav-link"><a href="#">About</a></li>
         </ul>
-        <div class="btn-menu">
+        <div class="registration">
           <button>Login</button>
           <button>Register</button>
         </div>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <picture>
-        <source media="(min-width:765px)" srcset="src/images/image-hero-desktop.png" class="hero-desktop" >
-        <img src="src/images/image-hero-mobile.png" alt="hero image" class="hero-mobile">
+        <source
+          media="(min-width:465px)"
+          srcset="src/images/image-hero-desktop.png"
+        />
+        <img src="src/images/image-hero-mobile.png" alt="hero image" />
       </picture>
-      <div class="text">
-        <h1 class="title">Make remote work</h1>
-        <p class="paragraph">
-          Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+      <section class="text-content">
+        <h1>Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
         </p>
         <button>Learn more</button>
-        <div class="brands">
-          <img src="src/images/client-databiz.svg" alt="databiz" class="databiz">
-          <img src="src/images/client-audiophile.svg" alt="audiophile" class="audiophile">
-          <img src="src/images/client-meet.svg" alt="meet" class="meet">
-          <img src="src/images/client-maker.svg" alt="maker" class="maker">
+        <div class="clients">
+          <img src="src/images/client-databiz.svg" alt="databiz" />
+          <img src="src/images/client-audiophile.svg" alt="audiophile" />
+          <img src="src/images/client-meet.svg" alt="meet" />
+          <img src="src/images/client-maker.svg" alt="maker" />
         </div>
-      </div>
-    </main>    
+      </section>
+    </main>
     <script src="src/js/index.js"></script>
   </body>
 </html>
